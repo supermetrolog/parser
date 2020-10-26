@@ -14,7 +14,7 @@ printData($data);
 function getRating()
 {
     $i = 0;
-    $pageMax = 50; //Количество страниц которые необходимо спарсить
+    $pageMax = 50; // ($pageMax / 10) -> Количество страниц которые необходимо спарсить
     while ($i < $pageMax) {
         $url = URL_FIRST_PART . $i . URL_LAST_PART;
         $content = file_get_contents($url);
